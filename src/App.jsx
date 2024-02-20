@@ -1,18 +1,16 @@
-import { Auth0Provider } from "@auth0/auth0-react";
-import Login from "./Login";
+import Home from "./Home";
+import Profile from "./Profile";
 
-const auth0Config = {
-  domain: "dev-twrzck2hag6l1yfu.us.auth0.com",
-  clientId: "QDwzSKyibURONFRFPCMsrEMQFiwoIWas",
-  redirectUri: window.location.origin,
-};
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function App() {
   return (
-    <Auth0Provider {...auth0Config}>
-      <div className="App">
-        <Login />
-      </div>
-    </Auth0Provider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        {/* <Route path="/login" element={<Login />} /> */}
+        {/* <Route path="/logout" element={<Logout />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
