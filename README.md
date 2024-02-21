@@ -41,6 +41,3 @@ This repository contains a React application with simple login and registration 
 - Log in or register using Auth0 or Microsoft Identity.
 - After successful authentication, you will be redirected to the home page.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
