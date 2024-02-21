@@ -1,0 +1,45 @@
+.profile-container {
+  text-align: center;
+  background: #c3ffff;
+  height: 100vh;
+  margin: 10px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 20px; */
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+.profile-details {
+  text-align: left;
+  animation: fadeIn 1s ease;
+}
+
+.logout-btn {
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
