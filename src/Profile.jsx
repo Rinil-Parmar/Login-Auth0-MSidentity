@@ -13,21 +13,20 @@ const Profile = () => {
   return (
     isAuthenticated && (
       <div className="profile-container">
-        <h1>Welcome, {user.name}!</h1>
-        <div className="profile-info">
-          <img src={user.picture} alt={user.name} className="profile-picture" />
-          <div className="profile-details">
-            <h2>{user.name}</h2>
-            <p>{user.email}</p>
+        <div className="card">
+          <div className="card-content">
+            <h1>Welcome, {user.name}!</h1>
+            <div className="profile-info">
+              <img src={user.picture} alt={user.name} className="profile-picture" />
+              <div className="profile-details">
+                <h2>{user.name}</h2>
+                <p>{user.email}</p>
+              </div>
+            </div>
+            <div className="logout-btn">
+              <Logout />
+            </div>
           </div>
-          {/* <p>Name: {user.name}</p>
-          <p>Nickname: {user.nickname}</p>
-          <p>Email: {user.email}</p>
-          <p>Email Verified: {user.email_verified ? "Yes" : "No"}</p>
-          <p>Family Name: {user.family_name}</p> */}
-        </div>
-        <div className="logout-btn">
-          <Logout />
         </div>
       </div>
     )

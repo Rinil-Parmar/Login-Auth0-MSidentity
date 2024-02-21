@@ -1,46 +1,51 @@
-.profile-container {
-  text-align: center;
-  background: #c3ffff;
-  height: 100vh;
-  margin: 10px;
-  /* margin-top: 50px; */
-}
+ .profile-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #c3ffff;
+ }
 
-.profile-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
+ .card {
+   width: 600px;
+   height: 500px;
+   background-color: #fff;
+   border-radius: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   overflow: hidden;
+ }
 
-.profile-picture {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-  transition: transform 0.3s ease-in-out;
-}
+ .card-content {
+   padding: 40px;
+ }
 
-.profile-picture:hover {
-  transform: scale(1.1);
-}
+ .profile-info {
+   display: flex;
+   align-items: center;
+ }
 
-.profile-details {
-  text-align: left;
-  animation: fadeIn 1s ease;
-}
+ .profile-picture {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   margin-right: 20px;
+ }
 
-.logout-btn {
-  margin-top: 20px;
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+ .card h1 {
+   font-size: 40px;
+   color: #333;
+   margin-bottom: 51px;
+ }
+
+
+ h2 {
+   font-size: 30px;
+   color: #333;
+   margin-bottom: 10px;
+ }
+
+ .logout-btn {
+   margin-top: 20px;
+
+ }
